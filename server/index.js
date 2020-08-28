@@ -3,11 +3,11 @@ const http = require('http');
 const app = express();
 const server = http.createServer(app);
 const { getInfo, getMessages, addUser, addMessage, addCountry, getUsers } = require('./controllers')
-
+const cors = require('cors')
 //Using Router for handling Get request on Server Startup 
 const router = require('./router');
 app.use(router);
-
+app.use(cors());
 //requiring all necessary libraries for Socket.io
 const socket = require('socket.io')
 const io = socket(server)
