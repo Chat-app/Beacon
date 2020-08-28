@@ -1,5 +1,6 @@
 const express = require('express');
 const http = require('http');
+const cors = require('cors');
 const app = express();
 const server = http.createServer(app);
 const { getInfo, addUser, setUsers, addMessage, setMessages, addCountry, getCountries, setNumOfCountries, setCountries, getMessages, getUsers } = require('./controllers')

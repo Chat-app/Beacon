@@ -9,7 +9,7 @@ const Map = () => {
   const [totalUsers, setTotalUsers] = useState("");
   const [totalCountries, setTotalCountries] = useState("");
 
-  let socket = io("https://beacon-root.herokuapp.com/");
+  let socket = io("https://root-beacon.herokuapp.com/");
 
   useEffect(() => {
     var map = L.map("map", {
