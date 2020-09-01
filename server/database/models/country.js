@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
 
 const countrySchema = new mongoose.Schema({
-
     code: {
         type: String
     },
